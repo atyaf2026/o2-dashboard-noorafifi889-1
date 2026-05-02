@@ -1,3 +1,4 @@
+import { ChartNoAxesCombined, ClipboardMinus, House, Settings, UserCheck } from 'lucide-react';
 import React from 'react';
 
 export function Sidebar() {
@@ -7,12 +8,32 @@ export function Sidebar() {
         <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">O2</div>
         <h2 className="font-bold text-xl tracking-tight text-zinc-900">O2 Dashboard</h2>
       </div>
-      <nav className="flex-1 p-4 space-y-2">
-        <div className="text-zinc-500 font-medium px-4 py-2 bg-indigo-50 text-indigo-700 rounded-lg">side bar content (active)</div>
-        <div className="text-zinc-500 font-medium px-4 py-2 hover:bg-zinc-50 rounded-lg">side bar content</div>
-        <div className="text-zinc-500 font-medium px-4 py-2 hover:bg-zinc-50 rounded-lg">side bar content</div>
-        <div className="text-zinc-500 font-medium px-4 py-2 hover:bg-zinc-50 rounded-lg">side bar content</div>
-      </nav>
+<nav className="flex-1 p-4 space-y-2">
+  <div className="flex items-center gap-2 text-zinc-500 font-medium px-4 py-2 bg-indigo-50 text-indigo-700 rounded-lg">
+    <House className="w-5 h-5" />
+    <span>Home</span>
+  </div>
+
+  <div className="flex items-center gap-2 text-zinc-500 font-medium px-4 py-2 hover:bg-zinc-50 rounded-lg">
+    <ChartNoAxesCombined className="w-5 h-5" />
+    <span>Analytics</span>
+  </div>
+
+  <div className="flex items-center gap-2 text-zinc-500 font-medium px-4 py-2 hover:bg-zinc-50 rounded-lg">
+    <UserCheck className="w-5 h-5" />
+    <span>Users</span>
+  </div>
+
+  <div className="flex items-center gap-2 text-zinc-500 font-medium px-4 py-2 hover:bg-zinc-50 rounded-lg">
+    <ClipboardMinus className="w-5 h-5" />
+    <span>Reports</span>
+  </div>
+
+  <div className="flex items-center gap-2 text-zinc-500 font-medium px-4 py-2 hover:bg-zinc-50 rounded-lg">
+    <Settings className="w-5 h-5" />
+    <span>Settings</span>
+  </div>
+</nav>
       <div className="p-6 border-t space-y-4">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-zinc-200 rounded-full" />
