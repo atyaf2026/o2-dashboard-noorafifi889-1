@@ -10,7 +10,6 @@ import { PerformanceCard } from "./PerformanceCard";
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-6 w-full">
-      {/* 1. الترحيب */}
       <header className="flex flex-col gap-1">
         <h1 className="text-2xl font-bold text-zinc-900 tracking-tight">
           Welcome back, Mohammed
@@ -20,7 +19,6 @@ export default function HomePage() {
         </p>
       </header>
 
-      {/* 2. الإحصائيات العلوية */}
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <StatsCard 
           title="Total Revenue" 
@@ -37,13 +35,11 @@ export default function HomePage() {
           subtitle="42 users online now" 
           variant="indigo"
         />
-        {/* شارت أداء النظام الصغير */}
         <div className="md:col-span-2">
           <ChartCard />
         </div>
       </section>
 
-      {/* 3. الشارت الرئيسي والطلبات */}
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2">
           <PerformanceCard />
@@ -53,13 +49,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. صحة النظام والمهام القادمة */}
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <SystemHealth />
         <UpcomingTasks />
       </section>
 
-      {/* 5. جدول الأصول */}
       <section className="w-full pb-10">
         <AssetTable />
       </section>

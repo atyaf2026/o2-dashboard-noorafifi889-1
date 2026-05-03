@@ -6,7 +6,7 @@ interface Props {
   icon: React.ReactNode;
   badge?: string;
   subtitle?: string;
-  variant?: "emerald" | "indigo"; // أضفنا خيار لتغيير اللون بناءً على النوع
+  variant?: "emerald" | "indigo"; 
 }
 
 export const StatsCard = ({ title, value, icon, badge, subtitle, variant = "emerald" }: Props) => {

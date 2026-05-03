@@ -20,7 +20,6 @@ export const PerformanceCard = () => {
         </button>
       </div>
 
-      {/* Chart Area with Background */}
       <div className="flex-1 min-h-[220px] w-full relative bg-[#F8F9FB] rounded-2xl overflow-hidden p-4">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart data={data}>
@@ -43,7 +42,6 @@ export const PerformanceCard = () => {
         </ResponsiveContainer>
       </div>
 
-      {/* Footer Stats */}
       <div className="grid grid-cols-4 gap-4 mt-8">
         <StatItem label="Users" value="2.4k" />
         <StatItem label="Click Rate" value="18.2%" />
