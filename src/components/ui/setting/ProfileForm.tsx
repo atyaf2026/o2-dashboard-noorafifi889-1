@@ -13,10 +13,10 @@ export const ProfileForm = () => (
         <div className="relative group">
           <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-50 shadow-sm">
             <Image src="/image-profile.jpg" alt="Profile" 
-  width={128} 
-  height={128} 
-  className="w-full h-full object-cover"
-  priority/>
+            width={128} 
+            height={128} 
+            className="w-full h-full object-cover"
+            priority/>
           </div>
           <button className="absolute bottom-0 right-1 bg-indigo-600 p-2 rounded-full text-white border-4 border-white shadow-lg hover:bg-indigo-700 transition-colors">
             <Camera className="w-4 h-4" />
