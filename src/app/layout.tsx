@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import { DashboardLayout } from "../components/layout/DashboardLayout";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
@@ -12,7 +13,6 @@ export const metadata: Metadata = {
   description: "Training dashboard for O2",
 };
 
-import { DashboardLayout } from "@/components/layout/DashboardLayout";
 
 export default function RootLayout({
   children,
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${openSans.variable} h-full antialiased`}>
-      <body className="min-h-full">
+      <body className="min-h-full ">
         <DashboardLayout>{children}</DashboardLayout>
       </body>
     </html>
