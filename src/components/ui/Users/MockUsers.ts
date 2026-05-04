@@ -7,8 +7,7 @@ export interface User {
   joinDate: string;
 }
 
-
-export const mockUsers = [
+export const mockUsers: User[] = [
   { 
     id: '1', 
     name: 'Rivera', 
